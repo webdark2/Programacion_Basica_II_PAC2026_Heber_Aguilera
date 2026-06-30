@@ -24,7 +24,14 @@ int main() {
 	
 	// Eliminar el último elemento del vector
 	miVector.pop_back();
-	
+
+    miVector.clear(); // Eliminar otro elemento
+
+	if (miVector.empty()) {
+		cout << "El vector esta vacío." << endl;
+	} else {
+		cout << "El vector no esta vacio." << endl;
+	}
 
 	// Imprimir el tamaño después de eliminar un elemento
 	cout << "Tamaño después de eliminar un elemento: " << miVector.size() << endl;

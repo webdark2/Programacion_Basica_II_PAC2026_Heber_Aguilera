@@ -11,6 +11,11 @@ int main() {
 	miVector.push_back(67);
 	miVector.push_back(29);
 	miVector.push_back(30);
+
+    miVector.pop_back(); // Elimina el último elemento del vector --30
+   miVector.size(); // Devuelve el número de elementos en el vector --5
+   miVector.clear(); // Elimina todos los elementos del vector, dejándolo vacío
+   miVector.empty(); // Devuelve true si el vector está vacío, false en caso contrario
 	
 	// Imprimir los elementos del vector
 	for (int i = 0; i < miVector.size(); ++i) {
